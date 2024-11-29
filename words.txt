@@ -12,7 +12,6 @@ allocs
 ANDI
 Ankr
 Apeworx
-Arweave
 authrpc
 Badgeholder's
 Badgeholders
@@ -74,6 +73,7 @@ DATACAP
 datacap
 DATADIR
 datadir
+derviation
 Devnet
 devnet
 devnets
@@ -139,7 +139,6 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
-Holesky
 holesky
 IERC
 IGNOREPRICE
@@ -248,7 +247,6 @@ Permissionless
 permissionless
 permissionlessly
 personhood
-Pimlico
 PPROF
 pprof
 Precommitments
