@@ -22,6 +22,7 @@ BGEZ
 BGTZ
 Biconomy
 biconomy
+biconomy
 birthdate
 BLEZ
 BLOBPOOL
@@ -247,6 +248,7 @@ Permissionless
 permissionless
 permissionlessly
 personhood
+Pimlico
 PPROF
 pprof
 Precommitments
