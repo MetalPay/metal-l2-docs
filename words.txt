@@ -248,6 +248,7 @@ Permissionless
 permissionless
 permissionlessly
 personhood
+Pimlico
 PPROF
 pprof
 Precommitments
