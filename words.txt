@@ -21,6 +21,7 @@ basefee
 BGEZ
 BGTZ
 Biconomy
+biconomy
 birthdate
 BLEZ
 BLOBPOOL
@@ -55,7 +56,6 @@ Celestia
 Celestia's
 Chainlink
 chainlist
-Chainstack
 chaosnet
 Chugsplash
 Clabby
@@ -190,6 +190,7 @@ MEMPROFILERATE
 memprofilerate
 Merkle
 merkle
+metall
 MFHI
 MFLO
 Minato
@@ -264,8 +265,6 @@ permissionlessly
 Perps
 personhood
 Pimlico
-POAP
-POAPs
 PPROF
 pprof
 Precommitments
