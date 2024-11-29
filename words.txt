@@ -136,7 +136,6 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
-Holesky
 holesky
 IERC
 IGNOREPRICE
@@ -245,7 +244,6 @@ Permissionless
 permissionless
 permissionlessly
 personhood
-Pimlico
 PPROF
 pprof
 Precommitments
