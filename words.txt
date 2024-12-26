@@ -27,8 +27,6 @@ BLEZ
 BLOBPOOL
 blobpool
 blobspace
-Blockdaemon
-Blockdaemon's
 blockhash
 blocklists
 BLOCKLOGS
@@ -75,7 +73,6 @@ DATACAP
 datacap
 DATADIR
 datadir
-derviation
 Devnet
 devnet
 devnets
@@ -86,7 +83,6 @@ disabletxpoolgossip
 Discv
 discv
 DIVU
-Drand
 dripcheck
 Drippie
 Eigen
@@ -121,7 +117,6 @@ FPVM
 FPVMs
 Fraxtal
 Funct
-gameplay
 GASCAP
 gascap
 GCMODE
@@ -143,11 +138,11 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
+Holesky
 holesky
 IERC
 IGNOREPRICE
 ignoreprice
-Immunefi
 implicity
 INFLUXDBV
 influxdbv
@@ -186,7 +181,6 @@ merkle
 metall
 MFHI
 MFLO
-Minato
 MINFREEDISK
 minfreedisk
 MINSUGGESTEDPRIORITYFEE
@@ -195,7 +189,6 @@ Mintable
 MIPSEVM
 Mitigations
 Monitorism
-Moralis
 Mordor
 mountpoint
 MOVN
@@ -238,7 +231,6 @@ Offchain
 offchain
 OPCM
 opcm
-Openfort
 oplabs
 opnode's
 opstack
@@ -287,9 +279,6 @@ Proxied
 Proxyd
 proxyd
 pseudorandomly
-Pyth
-Pyth's
-QRNG
 Quicknode
 quicknode
 quickstarts
@@ -323,21 +312,16 @@ runbooks
 RWAs
 safedb
 Schnorr
-SEPOLIA
-Sepolia
-sepolia
 seqnr
 SEQUENCERHTTP
 sequencerhttp
 serv
-signup
 SLLV
 SLTI
 SLTIU
 SLTU
 smartcard
 snapshotlog
-Soneium
 soulbound
 soyboy
 spacebar
@@ -398,7 +382,6 @@ VMDEBUG
 vmdebug
 VMODULE
 vmodule
-voxel
 Warpcast
 xlarge
 XORI
