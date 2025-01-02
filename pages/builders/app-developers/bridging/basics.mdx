@@ -1,26 +1,26 @@
 ---
 title: Bridging basics
 lang: en-US
-description: Learn about the fundamentals of sending data and tokens between Ethereum and OP Mainnet.
+description: Learn about the fundamentals of sending data and tokens between Ethereum and Metal.
 ---
 
 # Bridging basics
 
-OP Mainnet is a "Layer 2" system and is fundamentally connected to Ethereum.
-However, OP Mainnet is also a distinct blockchain with its own blocks and transactions.
-App developers commonly need to move data and tokens between OP Mainnet and Ethereum.
+Metal L2 is a "Layer 2" system and is fundamentally connected to Ethereum.
+However, Metal L2 is also a distinct blockchain with its own blocks and transactions.
+App developers commonly need to move data and tokens between Metal L2 and Ethereum.
 This process of moving data and tokens between the two networks is called "bridging".
 
 ## Sending tokens
 
-One of the most common use cases for bridging is the need to send ETH or ERC-20 tokens between OP Mainnet and Ethereum.
-OP Mainnet has a system called the [Standard Bridge](./standard-bridge) that makes it easy to move tokens in both directions.
+One of the most common use cases for bridging is the need to send ETH or ERC-20 tokens between Metal L2 and Ethereum.
+Metal L2 has a system called the [Standard Bridge](./standard-bridge) that makes it easy to move tokens in both directions.
 If you mostly need to bridge tokens, make sure to check out the [Standard Bridge](./standard-bridge) guide.
 
 ## Sending data
 
-Under the hood, the Standard Bridge is just an application that uses the OP Mainnet [message passing system to send arbitrary data between Ethereum and OP Mainnet](./messaging).
-Applications can use this system to have a contract on Ethereum interact with a contract on OP Mainnet, and vice versa.
+Under the hood, the Standard Bridge is just an application that uses the Metal L2 [message passing system to send arbitrary data between Ethereum and Metal L2](./messaging).
+Applications can use this system to have a contract on Ethereum interact with a contract on Metal L2, and vice versa.
 All of this is easily accessible with a simple, clean API.
 
 ## Next steps
