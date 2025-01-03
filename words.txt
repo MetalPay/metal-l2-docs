@@ -299,8 +299,6 @@ superchain
 Superchain's
 Superchains
 Superscan
-Supersim
-supersim
 SYNCMODE
 syncmode
 SYNCTARGET
