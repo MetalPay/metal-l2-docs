@@ -1,34 +1,28 @@
 {
     "block-explorer": {
-        "title": "OP Mainnet explorer",
-        "href": "https://optimistic.etherscan.io/",
+        "title": "Metal L2 Mainnet Explorer",
+        "href": "https://explorer.metall2.com/",
+        "newWindow": true
+      },
+      "metall2bridge": {
+        "title": "Metal L2 Bridge",
+        "href": "https://bridge.metall2.com/",
         "newWindow": true
       },
       "bridge": {
-        "title": "Superchain bridges",
+        "title": "Superchain Bridges",
         "href": "https://app.optimism.io/bridge",
         "newWindow": true
       },
-      "sdk": {
-        "title": "Optimism SDK",
-        "href": "https://sdk.optimism.io/",
-        "newWindow": true
-      },
       "faucet": {
-        "title": "Superchain faucet",
+        "title": "Superchain Faucet",
         "type": "page",
-        "href": "https://console.optimism.io/faucet?utm_source=docs",
+        "href": "https://console.optimism.io/faucet",
         "newWindow": true
       },
       "console": {
-        "title": "Superchain dev console",
-        "href": "https://console.optimism.io/?utm_source=docs",
-        "newWindow": true
-      },
-      "gas": {
-        "title": "Gas tracker",
-        "type": "page",
-        "href": "https://optimistic.grafana.net/public-dashboards/c84a5a9924fe4e14b270a42a8651ceb8?orgId=1&refresh=5m",
+        "title": "Superchain Dev Console",
+        "href": "https://console.optimism.io/",
         "newWindow": true
       }
 }
