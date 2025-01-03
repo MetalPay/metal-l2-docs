@@ -107,5 +107,19 @@
   "connect": {
     "title": "Connect",
     "display": "children"
+  },
+
+  "+++ Superchain": {
+    "title": "",
+    "type": "separator"
+  },
+  "--- Superchain": {
+    "title": "Superchain",
+    "type": "separator"
+  },
+
+  "superchain": {
+    "title": "Superchain",
+    "display": "children"
   }
 }
