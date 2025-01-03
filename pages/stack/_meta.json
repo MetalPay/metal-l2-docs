@@ -7,14 +7,5 @@
   "protocol": "Protocol",
   "transactions": "Transactions",
   "features": "Features",
-  "security": "Security",
-  "audits-report": "Audit reports",
-  "--- EXPERIMENTAL": {
-    "title": "EXPERIMENTAL",
-    "type": "separator"
-  },
-  "opcm": "OP Contracts Manager",
-  "interop": "Interoperability",
-  "beta-features": "Beta features",
-  "research": "Research"
+  "security": "Security"
 }
