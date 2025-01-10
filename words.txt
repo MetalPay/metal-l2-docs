@@ -9,7 +9,6 @@ airgap
 Allnodes
 allocs
 ANDI
-Ankr
 Apeworx
 authrpc
 Badgeholder's
@@ -18,7 +17,6 @@ badgeholders
 BGEZ
 BGTZ
 Biconomy
-biconomy
 biconomy
 birthdate
 BLEZ
@@ -54,7 +52,6 @@ COMPUTEPENDINGBLOCK
 computependingblock
 confs
 Consen
-Consen
 corsdomain
 counterfactually
 Crosschain
@@ -63,7 +60,6 @@ DATACAP
 datacap
 DATADIR
 datadir
-derviation
 Devnet
 devnet
 devx
@@ -121,14 +117,12 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
-Holesky
 holesky
 IGNOREPRICE
 ignoreprice
 implicity
 INFLUXDBV
 influxdbv
-interchain
 IPCDISABLE
 ipcdisable
 ipcfile
@@ -168,8 +162,6 @@ MINSUGGESTEDPRIORITYFEE
 minsuggestedpriorityfee
 Mintable
 MIPSEVM
-Mitigations
-Monitorism
 Mordor
 MOVN
 MOVZ
@@ -255,8 +247,6 @@ REJOURNAL
 rejournal
 REMOTEDB
 remotedb
-Reown
-Reown's
 replayability
 REQUIREDBLOCKS
 requiredblocks
@@ -317,8 +307,6 @@ txpool
 txproxy
 uncountered
 undercollateralize
-Unichain
-unmetered
 Unprotect
 unsubmitted
 UPNP
