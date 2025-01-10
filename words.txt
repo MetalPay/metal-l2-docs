@@ -117,7 +117,6 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
-Holesky
 holesky
 IGNOREPRICE
 ignoreprice
