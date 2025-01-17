@@ -35,6 +35,7 @@ BLOOMFILTER
 bloomfilter
 BLTZ
 Bootcamp
+bootnode
 BOOTNODES
 Bootnodes
 bootnodes
@@ -310,6 +311,7 @@ undercollateralize
 Unprotect
 unsubmitted
 UPNP
+usafe
 VERKLE
 verkle
 VHOSTS
