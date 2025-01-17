@@ -19,8 +19,6 @@ remap = [
     "file:///([^#%\\.]+)$ file:///./pages/$1.mdx",
 ]
 
-# Base URL or website root directory to check relative URLs.
-# base = "./pages"
 # Base URL or website root directory to check relative URLs
 base = "."
 

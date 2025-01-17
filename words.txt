@@ -11,14 +11,10 @@ allocs
 ANDI
 Apeworx
 authrpc
-Badgeholder's
-Badgeholders
-badgeholders
 BGEZ
 BGTZ
 Biconomy
 biconomy
-birthdate
 BLEZ
 BLOBPOOL
 blobpool
@@ -35,7 +31,6 @@ BLOOMFILTER
 bloomfilter
 BLTZ
 Bootcamp
-bootnode
 BOOTNODES
 Bootnodes
 bootnodes
@@ -87,7 +82,6 @@ exitwhensynced
 EXTRADATA
 extradata
 Farcaster
-farcaster
 FDLIMIT
 fdlimit
 featureset
@@ -129,7 +123,6 @@ ipcdisable
 ipcfile
 IPCPATH
 ipcpath
-ipfs
 JALR
 JOURNALREMOTES
 journalremotes
@@ -170,6 +163,7 @@ MTHI
 MTLO
 MULT
 multiaddr
+multichain
 multiclient
 multisigs
 MULTU
@@ -214,7 +208,6 @@ permissioned
 Permissionless
 permissionless
 permissionlessly
-personhood
 PPROF
 pprof
 Precommitments
@@ -229,6 +222,7 @@ Preimage
 PREIMAGES
 preimages
 prestate
+PREVRENDAO
 PRICEBUMP
 pricebump
 PRICELIMIT
@@ -258,8 +252,6 @@ rpckind
 RPCPREFIX
 rpcprefix
 RPGF
-Rpgf
-rpgf
 RWAs
 safedb
 Schnorr
@@ -273,7 +265,6 @@ SLTIU
 SLTU
 smartcard
 snapshotlog
-soulbound
 soyboy
 spacebar
 Spearbit
@@ -288,8 +279,11 @@ SUPERCHAIN
 Superchain
 superchain
 Superchain's
+Superchainerc
 Superchains
 Superscan
+Supersim
+supersim
 SYNCMODE
 syncmode
 SYNCTARGET
@@ -311,7 +305,6 @@ undercollateralize
 Unprotect
 unsubmitted
 UPNP
-usafe
 VERKLE
 verkle
 VHOSTS
@@ -323,7 +316,6 @@ VMDEBUG
 vmdebug
 VMODULE
 vmodule
-Warpcast
 XORI
 xtensibility
 ZKPs
