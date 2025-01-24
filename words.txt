@@ -8,6 +8,11 @@ ADDU
 airgap
 Allnodes
 allocs
+Alphanet
+alphanet
+Alphanets
+alphanets
+altda
 ANDI
 Apeworx
 authrpc
@@ -85,6 +90,7 @@ Farcaster
 FDLIMIT
 fdlimit
 featureset
+Flashblocks
 Flashbots
 forkable
 forkchoice
@@ -213,6 +219,7 @@ pprof
 Precommitments
 precommitments
 preconfigured
+Preconfigured
 predeploy
 Predeployed
 predeployed
@@ -230,6 +237,7 @@ pricelimit
 productionize
 productionized
 Protip
+providng
 Proxied
 pseudorandomly
 Quicknode
@@ -274,6 +282,7 @@ stablecoins
 subcomponents
 subgame
 subheaders
+subsecond
 SUBU
 SUPERCHAIN
 Superchain
@@ -312,6 +321,7 @@ vhosts
 Viem
 viem
 Viem's
+viem's
 VMDEBUG
 vmdebug
 VMODULE
