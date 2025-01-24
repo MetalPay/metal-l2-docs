@@ -8,7 +8,7 @@ import { Callout, Steps } from 'nextra/components'
 
 # Building a node from source
 
-Docker images are the easiest way to run an OP Mainnet node, but you can always build your own node from source code.
+Docker images are the easiest way to run an Metal L2 node, but you can always build your own node from source code.
 You might want to do this if you want to run a node on a specific architecture or if you want to inspect the source code of the node you're running.
 This guide will walk you through the full process of building a node from source.
 
@@ -32,9 +32,9 @@ In this tutorial you will build the `op-geth` implementation of the Execution Cl
 
 ### Legacy Geth (optional)
 
-Legacy Geth is an optional component for OP Mainnet archive nodes.
-Legacy Geth allows you to execute stateful queries like `eth_call` against blocks and transactions that occurred before the OP Mainnet [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/).
-Legacy Geth is only relevant to OP Mainnet archive nodes and is not required for full nodes or OP Sepolia nodes.
+Legacy Geth is an optional component for Metal L2 archive nodes.
+Legacy Geth allows you to execute stateful queries like `eth_call` against blocks and transactions that occurred before the Metal L2 [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/).
+Legacy Geth is only relevant to Metal L2 archive nodes and is not required for full nodes or Metal L2 Testnet nodes.
 
 Currently, `l2Geth` is the only available implementation of Legacy Geth.
 In this tutorial you will build the `l2geth` implementation of Legacy Geth as found in the [`optimism-legacy` repository](https://github.com/ethereum-optimism/optimism-legacy).
@@ -77,7 +77,7 @@ git checkout <name of release branch>
 
 <Callout>
 Make sure to read the Releases page carefully to determine the correct branch to check out.
-Some releases may only be required for the OP Sepolia testnet.
+Some releases may only be required for the Metal L2 Testnet testnet.
 </Callout>
 
 {<h3>Install Node.js dependencies</h3>}
@@ -133,7 +133,7 @@ git checkout <name of release branch>
 
 <Callout>
 Make sure to read the Releases page carefully to determine the correct branch to check out.
-Some releases may only be required for the OP Sepolia testnet.
+Some releases may only be required for the Metal L2 Testnet testnet.
 </Callout>
 
 {<h3>Build op-geth</h3>}
@@ -148,9 +148,9 @@ make geth
 
 ## Build legacy Geth (optional)
 
-Legacy Geth is an optional component for OP Mainnet archive nodes.
-Legacy Geth allows you to execute stateful queries like `eth_call` against blocks and transactions that occurred before the OP Mainnet [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/).
-Legacy Geth is only relevant to OP Mainnet archive nodes and is not required for full nodes or OP Sepolia nodes.
+Legacy Geth is an optional component for Metal L2 archive nodes.
+Legacy Geth allows you to execute stateful queries like `eth_call` against blocks and transactions that occurred before the Metal L2 [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/).
+Legacy Geth is only relevant to Metal L2 archive nodes and is not required for full nodes or Metal L2 Testnet nodes.
 
 <Steps>
 
@@ -174,6 +174,6 @@ make
 
 ## Next steps
 
-*   Click here to [Run an OP Mainnet Node from Source Code](mainnet)
-*   Click here to [Run an OP Sepolia Node from Source Code](testnet)
+*   Click here to [Run an Metal L2 Node from Source Code](mainnet)
+*   Click here to [Run an Metal L2 Testnet Node from Source Code](testnet)
 *   If you run into any problems, please visit the [Node Troubleshooting Guide](../management/troubleshooting) for help.

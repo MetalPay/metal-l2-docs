@@ -23,7 +23,7 @@ type DataAvailabilityType = "Ethereum" | "AltDA Plasma Mode";
 export function ChainParametersForm(): ReactElement {
   const [transactionsPerDay, setTransactionsPerDay] = useState(500000);
   const [comparableTransactionType, setComparableTransactionType] =
-    useState<ComparableTransactionType>("General OP Mainnet");
+    useState<ComparableTransactionType>("General Metal L2");
   const [dataAvailabilityType, setDataAvailabilityType] = useState<DataAvailabilityType>("Ethereum");
   const [isFaultProofEnabled, setIsFaultProofEnabled] = useState("yes");
   const [targetDataFeeMargin, setTargetDataFeeMargin] = useState(5);
@@ -36,7 +36,7 @@ export function ChainParametersForm(): ReactElement {
   const [showResult, setShowResult] = useState(false);
 
   const comparableTransactionTypeOptions = [
-    "General OP Mainnet",
+    "General Metal L2",
     "Base",
     "Zora",
     "Mint",

@@ -12,10 +12,13 @@ Alphanet
 alphanet
 Alphanets
 alphanets
-altda
 ANDI
 Apeworx
 authrpc
+Betanet
+betanet
+Betanets
+betanets
 BGEZ
 BGTZ
 Biconomy
@@ -32,6 +35,8 @@ blockprofilerate
 Blockscout
 Blockspace
 blockspace
+Blocktimes
+blocktimes
 BLOOMFILTER
 bloomfilter
 BLTZ
@@ -43,6 +48,7 @@ bottlenecked
 Brotli
 Callouts
 callouts
+Celestia
 chainlist
 chaosnet
 Chugsplash
@@ -63,6 +69,8 @@ DATADIR
 datadir
 Devnet
 devnet
+Devnets
+devnets
 devx
 DISABLETXPOOLGOSSIP
 disabletxpoolgossip
@@ -70,6 +78,7 @@ Discv
 discv
 DIVU
 Drippie
+Eigen
 ENABLEDEPRECATEDPERSONAL
 enabledeprecatedpersonal
 enginekind
@@ -156,6 +165,7 @@ merkle
 metall
 MFHI
 MFLO
+Mgas
 MINFREEDISK
 minfreedisk
 MINSUGGESTEDPRIORITYFEE
@@ -169,7 +179,6 @@ MTHI
 MTLO
 MULT
 multiaddr
-multichain
 multiclient
 multisigs
 MULTU
@@ -219,7 +228,6 @@ pprof
 Precommitments
 precommitments
 preconfigured
-Preconfigured
 predeploy
 Predeployed
 predeployed
@@ -229,7 +237,7 @@ Preimage
 PREIMAGES
 preimages
 prestate
-PREVRENDAO
+PREVRANDAO
 PRICEBUMP
 pricebump
 PRICELIMIT
@@ -288,11 +296,8 @@ SUPERCHAIN
 Superchain
 superchain
 Superchain's
-Superchainerc
 Superchains
 Superscan
-Supersim
-supersim
 SYNCMODE
 syncmode
 SYNCTARGET

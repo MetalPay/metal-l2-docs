@@ -8,7 +8,7 @@ import { Callout } from 'nextra/components'
 
 # Smart Contract overview
 
-This guide provides an overview of the functionality of the smart contract components. You can also find [contract addresses](/chain/addresses) on OP Mainnet.
+This guide provides an overview of the functionality of the smart contract components. You can also find [contract addresses](/chain/addresses) on Metal L2.
 
 ## Layer 1 contracts
 
@@ -73,14 +73,14 @@ The upgrade was coupled with the [Granite network upgrade](/builders/node-operat
 The Safe Extensions protocol upgrade is intended to increase the security and
 decentralization of the Superchain by:
 
-1.  Increasing the Security Council Safe's signing threshold, from 4 to 10, out 
-of 13 owners. This meets the 75% threshold requirement for a Stage 1 rollup 
-outlined in [L2Beat's Stages framework](https://medium.com/l2beat/stages-update-security-council-requirements-4c79cea8ef52)
-2.  Reassigning the role of Guardian from the Foundation to a new Guardian Safe 
-with the Security Council Safe as its sole owner. This moves the Superchain 
-closer to satisfying the 1 week exit window requirement for Stage 1. 
-    *   Additionally the Foundation is appointed to the new DeputyGuardian role 
-        which is able to act as Guardian through the Guardian Safe. This 
+1.  Increasing the Security Council Safe's signing threshold, from 4 to 10, out
+    of 13 owners. This meets the 75% threshold requirement for a Stage 1 rollup
+    outlined in [L2Beat's Stages framework](https://medium.com/l2beat/stages-update-security-council-requirements-4c79cea8ef52)
+2.  Reassigning the role of Guardian from the Foundation to a new Guardian Safe
+    with the Security Council Safe as its sole owner. This moves the Superchain
+    closer to satisfying the 1 week exit window requirement for Stage 1.
+    *   Additionally the Foundation is appointed to the new DeputyGuardian role
+        which is able to act as Guardian through the Guardian Safe. This
         appointment can be revoked by the Security Council Safe at any time.
 3.  Reassigning the owner of the L2ProxyAdmin contract from the Foundation to
     the Security Council. This ensures the Security Council Safe has a blocking
@@ -323,7 +323,7 @@ to use this interface instead of interacting with lower-level contracts directly
 #### L1ERC721Bridge
 
 The `L1ERC721bridge` is a contract which works together with the `L2ERC721Bridge`
-to make it possible to transfer ERC721 tokens from Ethereum to OP Mainnet. This
+to make it possible to transfer ERC721 tokens from Ethereum to Metal L2. This
 contract acts as an escrow for ERC721 tokens deposited into L2.
 
 #### L1StandardBridge
@@ -353,32 +353,32 @@ optionally halt if using the wrong version.
 
 #### SystemConfig
 
-The `SystemConfig` contract helps manage configuration of an OP Stack 
-network. Much of the network's configuration is stored on L1 and picked up by 
-L2 as part of the derivation of the L2 chain. The contract also contains 
+The `SystemConfig` contract helps manage configuration of an OP Stack
+network. Much of the network's configuration is stored on L1 and picked up by
+L2 as part of the derivation of the L2 chain. The contract also contains
 references to all other contract addresses for the chain.
 
 #### DisputeGameFactory
 
-The `DisputeGameFactory` deploys instances of `FaultDisputeGame` and `PermissionedDisputeGame` 
-to resolve disputes about the OP Stack chain state at specific block numbers. 
+The `DisputeGameFactory` deploys instances of `FaultDisputeGame` and `PermissionedDisputeGame`
+to resolve disputes about the OP Stack chain state at specific block numbers.
 It serves as the entry point for creating and managing dispute games.
 The factory uses the `AnchorStateRegistry` for initialization,
 and integrates the `DelayedWETH` contract to manage participant bonds.
 
 #### FaultDisputeGame
 
-The `FaultDisputeGame` resolves disputes about the OP Stack chain state by 
-allowing participants to propose or challenge states. 
-It is deployed by the `DisputeGameFactory` and includes logic to finalize disputes. 
-The contract uses the `AnchorStateRegistry` to start from trusted states, 
-`MIPS` to execute fault proofs, the `PreimageOracle` to validate hash-based claims, 
+The `FaultDisputeGame` resolves disputes about the OP Stack chain state by
+allowing participants to propose or challenge states.
+It is deployed by the `DisputeGameFactory` and includes logic to finalize disputes.
+The contract uses the `AnchorStateRegistry` to start from trusted states,
+`MIPS` to execute fault proofs, the `PreimageOracle` to validate hash-based claims,
 and the `DelayedWETH` contract to handle bonds.
 
 #### PermissionedDisputeGame
 
-The `PermissionedDisputeGame` is also deployed by the `DisputeGameFactory`, 
-and inherits logic and dependencies from `FaultDisputeGame` while adding role-based restrictions. 
+The `PermissionedDisputeGame` is also deployed by the `DisputeGameFactory`,
+and inherits logic and dependencies from `FaultDisputeGame` while adding role-based restrictions.
 It restricts participation to specific roles, such as designated proposers or challengers.
 It is used when stricter access controls are required, as enforced by the Guardian.
 
@@ -396,21 +396,20 @@ This mechanism ensures participants are financially committed and disputes are f
 
 #### MIPS
 
-The `MIPS` contract provides an on-chain implementation of a 32-bit, Big-Endian MIPS III virtual machine, 
-designed to execute fault proofs for disputes by processing a standardized instruction set. 
+The `MIPS` contract provides an on-chain implementation of a 32-bit, Big-Endian MIPS III virtual machine,
+designed to execute fault proofs for disputes by processing a standardized instruction set.
 This enables instances of `FaultDisputeGame` and `PermissionedDisputeGame` to resolve disputes
- over state transitions accurately and consistently. 
- The process starts from the trusted anchor state provided by the `AnchorStateRegistry`, 
- ensuring that the dispute is based on a reliable foundation. 
- The `PreimageOracle` is then used to retrieve pre-images of hash-based claims, 
- validating the data used in the computation and ensuring its integrity.
+over state transitions accurately and consistently.
+The process starts from the trusted anchor state provided by the `AnchorStateRegistry`,
+ensuring that the dispute is based on a reliable foundation.
+The `PreimageOracle` is then used to retrieve pre-images of hash-based claims,
+validating the data used in the computation and ensuring its integrity.
 
 #### PreimageOracle
 
-The `PreimageOracle` maps hashes to their corresponding pre-images for secure and permissioned data retrieval. 
-It validates hash-based claims used in disputes, such as state transitions or computational steps. 
+The `PreimageOracle` maps hashes to their corresponding pre-images for secure and permissioned data retrieval.
+It validates hash-based claims used in disputes, such as state transitions or computational steps.
 This ensures the integrity of fault proofs in `FaultDisputeGame` and `PermissionedDisputeGame` instances.
-
 
 #### DEPRECATED - L2OutputOracle
 
@@ -641,18 +640,18 @@ The `EAS` predeploy implements the Ethereum Attestation Service protocol.
 
 EAS contracts are deployed on these networks:
 
-| Network    | Attestation Contract                                                                                                                   | Schema Registry Contract                                                                                                               |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| OP Sepolia | [0x4200000000000000000000000000000000000021](https://sepolia-optimism.etherscan.io/address/0x4200000000000000000000000000000000000021) | [0x4200000000000000000000000000000000000020](https://sepolia-optimism.etherscan.io/address/0x4200000000000000000000000000000000000020) |
-| OP Mainnet | [0x4200000000000000000000000000000000000021](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000021)       | [0x4200000000000000000000000000000000000020](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000020)       |
+| Network          | Attestation Contract                                                                                                                   | Schema Registry Contract                                                                                                               |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Metal L2 Testnet | [0x4200000000000000000000000000000000000021](https://sepolia-optimism.etherscan.io/address/0x4200000000000000000000000000000000000021) | [0x4200000000000000000000000000000000000020](https://sepolia-optimism.etherscan.io/address/0x4200000000000000000000000000000000000020) |
+| Metal L2         | [0x4200000000000000000000000000000000000021](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000021)       | [0x4200000000000000000000000000000000000020](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000020)       |
 
 ### How to use EAS
 
 You can interact with the Ethereum Attestation Service in several ways:
 
 1.  **Using the EAS Scan UI:**
-    *   [EAS Scan for OP Mainnet](https://optimism.easscan.org/)
-    *   [EAS Scan for OP Sepolia](https://optimism-sepolia.easscan.org/)
+    *   [EAS Scan for Metal L2](https://optimism.easscan.org/)
+    *   [EAS Scan for Metal L2 Testnet](https://optimism-sepolia.easscan.org/)
 
 2.  **Using the JavaScript SDK:**
     *   [EAS SDK Documentation](https://docs.attest.sh/docs/developer-tools/eas-sdk)

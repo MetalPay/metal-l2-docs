@@ -1,14 +1,14 @@
 ---
 title: Bridging ETH with Viem
 lang: en-US
-description: Learn how to use Viem to transfer ETH between Layer 1 (Ethereum or Sepolia) and Layer 2 (OP Mainnet or OP Sepolia).
+description: Learn how to use Viem to transfer ETH between Layer 1 (Ethereum or Sepolia) and Layer 2 (Metal L2 or Metal L2 Testnet).
 ---
 
 import { Callout, Steps, Tabs } from 'nextra/components'
 
-# Bridging ETH to OP Mainnet with Viem
+# Bridging ETH to Metal L2 with Viem
 
-This tutorial explains how you can use [Viem](https://viem.sh) to bridge ETH from L1 (Ethereum or Sepolia) to L2 (OP Mainnet or OP Sepolia).
+This tutorial explains how you can use [Viem](https://viem.sh) to bridge ETH from L1 (Ethereum or Sepolia) to L2 (Metal L2 or Metal L2 Testnet).
 Viem is a TypeScript interface for Ethereum that provides low-level stateless primitives for interacting with Ethereum.
 It offers an easy way to add bridging functionality to your JavaScript-based application.
 
@@ -59,7 +59,7 @@ Since Viem is a [Node.js](https://nodejs.org/en/) library, you'll need to create
 
 ## Get ETH on Sepolia
 
-This tutorial explains how to bridge ETH from Sepolia to OP Sepolia.
+This tutorial explains how to bridge ETH from Sepolia to Metal L2 Testnet.
 You will need to get some ETH on Sepolia to follow along.
 
 <Callout type="info">
@@ -114,12 +114,12 @@ You need to import some dependencies into your Node REPL session.
 ```
 
 
-{<h3>Create L2 public client for interacting with OP Sepolia</h3>}
+{<h3>Create L2 public client for interacting with Metal L2 Testnet</h3>}
 
 ```js file=<rootDir>/public/tutorials/cross-dom-bridge-eth.js#L26-L29 hash=dd7868fc9ab8f8a34768c8a83232409b
 ```
 
-{<h3>Create L2 wallet client on OP Sepolia</h3>}
+{<h3>Create L2 wallet client on Metal L2 Testnet</h3>}
 
 ```js file=<rootDir>/public/tutorials/cross-dom-bridge-eth.js#L32-L36 hash=6f91578c5b155d7abfeecf2297ee9f70
 ```
@@ -252,13 +252,13 @@ Now you're going to repeat the process in reverse to bridge some ETH from L2 to 
       {<h3>Wait for withdrawal finalization</h3>}
 
       Before a withdrawal transaction can be finalized, you will need to wait for the finalization period.
-      This can only happen after the fault proof period has elapsed. On OP Mainnet, this takes 7 days.
+      This can only happen after the fault proof period has elapsed. On Metal L2, this takes 7 days.
 
       ```js file=<rootDir>/public/tutorials/cross-dom-bridge-eth.js#L94-L97 hash=15e6f754d2e9f11a03f400813efef383
       ```
 
       <Callout>
-        We're currently testing fault proofs on OP Sepolia, so withdrawal times
+        We're currently testing fault proofs on Metal L2 Testnet, so withdrawal times
         reflect Mainnet times.
       </Callout>
 
@@ -303,4 +303,4 @@ Now you're going to repeat the process in reverse to bridge some ETH from L2 to 
 
 You've just deposited and withdrawn ETH using `viem/op-stack`.
 You should now be able to write applications that use `viem/op-stack` to transfer ETH between L1 and L2.
-Although this tutorial used Sepolia and OP Sepolia, the same process works for Ethereum and OP Mainnet.
+Although this tutorial used Sepolia and Metal L2 Testnet, the same process works for Ethereum and Metal L2.

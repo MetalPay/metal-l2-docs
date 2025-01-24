@@ -15,7 +15,7 @@ Snap Sync significantly improves the experience of syncing an OP Stack node. Sna
 Snap Sync works by downloading a snapshot of the state from other nodes on the network and is then able to start executing blocks from the completed state rather than having to re-execute every single block.
 This means that performing a Snap Sync is significantly faster than performing a full sync.
 
-*   For OP Mainnet, node operators will be able to sync without having to download the [bedrock datadir](snapshots).
+*   For Metal L2, node operators will be able to sync without having to download the [bedrock datadir](snapshots).
 *   This also enables nodes to join the network after Ecotone activates without requiring a [blob archiver](blobs).
 *   Archive nodes are also fully supported.
 
@@ -30,7 +30,7 @@ For snap sync, all `op-geth` nodes should expose port `30303` TCP and `30303` UD
 
 Choose one of the following options to enable snap sync:
 
-*   **Option 1:** Snap sync, no required datadir on OP Mainnet. This is the recommended option because `op-node` tells `op-geth` to snap sync and then `op-geth` downloads the state at tip and once complete switches to inserting blocks one by one.
+*   **Option 1:** Snap sync, no required datadir on Metal L2. This is the recommended option because `op-node` tells `op-geth` to snap sync and then `op-geth` downloads the state at tip and once complete switches to inserting blocks one by one.
 
 <Tabs items={['op-node', 'op-geth']}>
   <Tabs.Tab>
@@ -46,7 +46,7 @@ Choose one of the following options to enable snap sync:
   </Tabs.Tab>
 </Tabs>
 
-*   **Option 2:** Archive sync with required [datadir](snapshots) for OP Mainnet, but no required datadir for other OP Stack networks.
+*   **Option 2:** Archive sync with required [datadir](snapshots) for Metal L2, but no required datadir for other OP Stack networks.
     This option is faster for archive nodes than other options because `--syncmode=full` means `op-geth` executes every block in the chain.
 
 <Tabs items={['op-node', 'op-geth']}>
@@ -87,7 +87,7 @@ In addition to op-geth, you can enable execution-layer syncing with alternative 
 Unlike `op-geth`, `reth` and `op-erigon` are designed as archive nodes, which means they require the complete history of the chain. 
 However, these clients can still retrieve block headers and data through the P2P network instead of deriving each individual block, resulting in a faster initial sync.
 
-For OP Mainnet, the [bedrock datadir](snapshots) is required. For other OP Stack networks, no datadir is required. 
+For Metal L2, the [bedrock datadir](snapshots) is required. For other OP Stack networks, no datadir is required. 
 
 To enable execution layer sync for these clients, set the following flags on `op-node`:
 ```shell

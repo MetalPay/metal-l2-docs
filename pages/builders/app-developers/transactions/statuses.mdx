@@ -1,12 +1,12 @@
 ---
-title: Transaction statuses on OP Mainnet
+title: Transaction statuses on Metal L2
 lang: en-US
-description: Learn about the statuses transactions can have on OP Mainnet.
+description: Learn about the statuses transactions can have on Metal L2.
 ---
 
-# Transaction statuses on OP Mainnet
+# Transaction statuses on Metal L2
 
-Transactions on OP Mainnet can have a number of different statuses depending on where a transaction is in the process of being included in the blockchain.
+Transactions on Metal L2 can have a number of different statuses depending on where a transaction is in the process of being included in the blockchain.
 Understanding these statuses can help you troubleshoot issues, build safer applications, and display more accurate information to your users.
 
 ## Pending
@@ -48,7 +48,7 @@ Transactions typically become "safe" within a few minutes of becoming "sequencer
 **Typically within 15-20 minutes, up to 12 hours**
 
 A transaction is considered "finalized" when it has been included in a block by the Sequencer, that block has been published to Ethereum, and that block has been finalized.
-Once a block has been finalized it is guaranteed to be included in the OP Mainnet blockchain.
+Once a block has been finalized it is guaranteed to be included in the Metal L2 blockchain.
 Applications that require the highest level of certainty that a transaction will be included in the blockchain should wait until the transaction is "finalized" before considering the transaction to be successful.
 
 The latest "finalized" block can be retrieved by calling the standard JSON-RPC method [`eth_getBlockByNumber`](https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_getblockbynumber) with the parameter `finalized` as the block number.

@@ -1,5 +1,5 @@
 export const transactionTypes = {
-  "General OP Mainnet": {
+  "General Metal L2": {
     TransactionsPerDay: 489109,
     AvgCalldataBytesPerTx: 1007.8,
     AvgEstimatedSizePerTx: 474.6,

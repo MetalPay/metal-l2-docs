@@ -14,7 +14,7 @@ import { Callout } from 'nextra/components'
 
 The next major scalability improvement to the OP Stack after Bedrock is to introduce the concept of *a Superchain*: a network of chains that share bridging, decentralized governance, upgrades, a communication layer and more—all built on the OP Stack.
 
-The launch of the Superchain would merge OP Mainnet and other chains into a single unified network of OP Chains (i.e., chains within the Superchain), and mark a major step towards bringing scalable and decentralized compute to the world. The goal of this document is to describe the scalability vision, the Superchain concept, and some changes to the OP Stack required to make this vision a reality.
+The launch of the Superchain would merge Metal L2 and other chains into a single unified network of OP Chains (i.e., chains within the Superchain), and mark a major step towards bringing scalable and decentralized compute to the world. The goal of this document is to describe the scalability vision, the Superchain concept, and some changes to the OP Stack required to make this vision a reality.
 
 This is the detailed explanation. [Click here for a less technical introduction](https://www.superchain.eco/).
 
@@ -143,7 +143,7 @@ In order to address these issues, we can introduce two features:
 <Callout type="info">
   Withdrawal claims
 
-  A claim about the state of one chain made on another chain. For instance, I can claim that in OP Mainnet I have burned my tokens with the intent to withdraw those tokens back to L1.
+  A claim about the state of one chain made on another chain. For instance, I can claim that in Metal L2 I have burned my tokens with the intent to withdraw those tokens back to L1.
 </Callout>
 
 We can enable these two features first by introducing a permissionless proof system to the Optimism bridge contracts. With the modular proof design introduced in Bedrock, proofs may come in the form of fault proofs or validity proofs (e.g. zero knowledge proofs). However, until validity proofs are productionized, we assume withdrawals will use a Fault Proof System.

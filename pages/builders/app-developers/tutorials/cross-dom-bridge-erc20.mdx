@@ -1,7 +1,7 @@
 ---
 title: Bridging ERC-20 tokens with the Optimism SDK
 lang: en-US
-description: Learn how to use the Optimism SDK to transfer ERC-20 tokens between Layer 1 (Ethereum or Sepolia) and Layer 2 (OP Mainnet or OP Sepolia).
+description: Learn how to use the Optimism SDK to transfer ERC-20 tokens between Layer 1 (Ethereum or Sepolia) and Layer 2 (Metal L2 or Metal L2 Testnet).
 ---
 
 import { Callout, Steps } from 'nextra/components'
@@ -9,11 +9,11 @@ import { WipCallout } from '@/components/WipCallout'
 
 <WipCallout />
 
-# Bridging ERC-20 tokens to OP Mainnet with the Optimism SDK
+# Bridging ERC-20 tokens to Metal L2 with the Optimism SDK
 
 
 
-This tutorial explains how you can use the [Optimism SDK](https://sdk.optimism.io) to bridge ERC-20 tokens from L1 (Ethereum or Sepolia) to L2 (OP Mainnet or OP Sepolia).
+This tutorial explains how you can use the [Optimism SDK](https://sdk.optimism.io) to bridge ERC-20 tokens from L1 (Ethereum or Sepolia) to L2 (Metal L2 or Metal L2 Testnet).
 The Optimism SDK is an easy way to add bridging functionality to your javascript-based application.
 It also provides some safety rails to prevent common mistakes that could cause tokens to be made inaccessible.
 
@@ -77,9 +77,9 @@ Since the Optimism SDK is a [Node.js](https://nodejs.org/en/) library, you'll ne
   the private key.
 </Callout>
 
-## Get ETH on Sepolia and OP Sepolia
+## Get ETH on Sepolia and Metal L2 Testnet
 
-This tutorial explains how to bridge tokens from Sepolia to OP Sepolia.
+This tutorial explains how to bridge tokens from Sepolia to Metal L2 Testnet.
 You will need to get some ETH on both of these testnets.
 
 <Callout type="info">
@@ -93,7 +93,7 @@ You will need to get some ETH on both of these testnets.
 
 You need a private key to sign transactions.
 Set your private key as an environment variable with the `export` command.
-Make sure this private key corresponds to an address that has ETH on both Sepolia and OP Sepolia.
+Make sure this private key corresponds to an address that has ETH on both Sepolia and Metal L2 Testnet.
 
 ```bash
 export TUTORIAL_PRIVATE_KEY=0x...
@@ -144,16 +144,16 @@ Let's set those up now.
 
   {<h3>Set the L1 and L2 ERC-20 addresses</h3>}
 
-  This tutorial uses existing ERC-20 tokens that have been deployed on Sepolia and OP Sepolia.
+  This tutorial uses existing ERC-20 tokens that have been deployed on Sepolia and Metal L2 Testnet.
   These tokens are designed for testing the bridging process.
 
   ```js file=<rootDir>/public/tutorials/cross-dom-bridge-erc20.js#L13-L14 hash=d8f0d4c8124782a6cd36097ff31010e5
   ```
 
   <Callout>
-    If you're coming from the [Bridging Your Standard ERC-20 Token to OP Mainnet
+    If you're coming from the [Bridging Your Standard ERC-20 Token to Metal L2
     Using the Standard Bridge](./standard-bridge-standard-token) or [Bridging Your
-    Custom ERC-20 Token to OP Mainnet Using the Standard
+    Custom ERC-20 Token to Metal L2 Using the Standard
     Bridge](./standard-bridge-custom-token) tutorials, you can use the addresses
     of your own ERC-20 tokens here instead.
   </Callout>
@@ -304,10 +304,10 @@ Now you're going to repeat the process in reverse to bridge some tokens from L2 
 
   The final step to withdrawing tokens from L2 to L1 is to relay the withdrawal on L1.
   This can only happen after the fault proof period has elapsed.
-  On OP Mainnet, this takes 7 days.
+  On Metal L2, this takes 7 days.
 
   <Callout>
-    We're currently testing fault proofs on OP Sepolia, so withdrawal times
+    We're currently testing fault proofs on Metal L2 Testnet, so withdrawal times
     reflect Mainnet times.
   </Callout>
 
@@ -341,4 +341,4 @@ Now you're going to repeat the process in reverse to bridge some tokens from L2 
 Congrats!
 You've just deposited and withdrawn tokens using the Optimism SDK.
 You should now be able to write applications that use the Optimism SDK to transfer ERC-20 tokens between L1 and L2.
-Although this tutorial used Sepolia and OP Sepolia, the same process works for Ethereum and OP Mainnet.
+Although this tutorial used Sepolia and Metal L2 Testnet, the same process works for Ethereum and Metal L2.

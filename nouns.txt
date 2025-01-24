@@ -1,5 +1,5 @@
 Optimism
-OP Mainnet
+Metal L2
 Ethereum
 OP Stack
 MetaMask

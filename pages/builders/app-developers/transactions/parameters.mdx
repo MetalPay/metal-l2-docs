@@ -1,16 +1,16 @@
 ---
-title: Setting transaction gas parameters on OP Mainnet
+title: Setting transaction gas parameters on Metal L2
 lang: en-US
-description: Learn how to set gas parameters for transactions on OP Mainnet.
+description: Learn how to set gas parameters for transactions on Metal L2.
 ---
 
 import { Callout, Steps } from 'nextra/components'
 
-# Setting transaction gas parameters on OP Mainnet
+# Setting transaction gas parameters on Metal L2
 
-OP Mainnet is designed to be [EVM equivalent](https://web.archive.org/web/20231127160757/https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306) which means that it is as compatible with Ethereum as possible, down to the client software used to run OP Mainnet nodes.
-Like Ethereum, OP Mainnet has an EIP-1559 style fee mechanism that dynamically adjusts a [base fee](https://ethereum.org/en/developers/docs/gas/#base-fee) that acts as the minimum fee that a transaction must pay to be included in a block.
-OP Mainnet also allows transactions to pay a [priority fee](https://ethereum.org/en/developers/docs/gas/#priority-fee) (also known as a tip) to incentivize the Sequencer to include transactions more quickly.
+Metal L2 is designed to be [EVM equivalent](https://web.archive.org/web/20231127160757/https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306) which means that it is as compatible with Ethereum as possible, down to the client software used to run Metal L2 nodes.
+Like Ethereum, Metal L2 has an EIP-1559 style fee mechanism that dynamically adjusts a [base fee](https://ethereum.org/en/developers/docs/gas/#base-fee) that acts as the minimum fee that a transaction must pay to be included in a block.
+Metal L2 also allows transactions to pay a [priority fee](https://ethereum.org/en/developers/docs/gas/#priority-fee) (also known as a tip) to incentivize the Sequencer to include transactions more quickly.
 
 Setting the base fee and the priority fee appropriately is important to ensure that your transactions are included in a timely manner.
 This guide will walk you through some best practices for determining the base fee and priority fee for your transactions.
@@ -20,8 +20,8 @@ This guide will walk you through some best practices for determining the base fe
 The base fee is the minimum fee that a transaction must pay to be included in a block.
 Transactions that specify a maximum fee per gas that is less than the current base fee cannot be included in the blockchain.
 
-The simplest way to select a base fee is to look at the latest available OP Mainnet block.
-Each OP Mainnet block includes the current base fee and the amount of gas used within that block.
+The simplest way to select a base fee is to look at the latest available Metal L2 block.
+Each Metal L2 block includes the current base fee and the amount of gas used within that block.
 You can use this information to predict a reasonable maximum fee for your transaction.
 
 Note that, like Ethereum, the base fee is not explicitly defined within a transaction.
@@ -31,7 +31,7 @@ Instead, the maximum base fee is determined as the difference between the `maxFe
 
 {<h3>Retrieve the latest block</h3>}
 
-Using the JSON-RPC API or your favorite Ethereum library, retrieve the latest block on OP Mainnet.
+Using the JSON-RPC API or your favorite Ethereum library, retrieve the latest block on Metal L2.
 
 {<h3>Retrieve the base fee and gas used</h3>}
 
@@ -39,10 +39,10 @@ From the block, retrieve the `baseFeePerGas` and `gasUsed` fields.
 
 {<h3>Predict the next base fee</h3>}
 
-OP Mainnet adjusts the base fee based on the amount of gas used in the previous block.
+Metal L2 adjusts the base fee based on the amount of gas used in the previous block.
 If the previous block used more than 5m gas (of the 30m gas limit), then the base fee will increase by up to 10%.
 If the previous block used less than 5m gas, then the base fee will decrease by up to 10%.
-Refer to the [OP Mainnet EIP-1559 Parameters](/stack/differences#eip-1559-parameters) section for more details.
+Refer to the [Metal L2 EIP-1559 Parameters](/stack/differences#eip-1559-parameters) section for more details.
 
 {<h3>Select a base fee per gas</h3>}
 

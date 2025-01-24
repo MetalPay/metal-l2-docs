@@ -28,7 +28,7 @@ const oneToken = 1000000000000000000n
 
 const messenger = new optimism.CrossChainMessenger({
   l1ChainId: 11155111, // 11155111 for Sepolia, 1 for Ethereum
-  l2ChainId: 11155420, // 11155420 for OP Sepolia, 10 for OP Mainnet
+  l2ChainId: 11155420, // 11155420 for Metal L2 Testnet, 10 for Metal L2
   l1SignerOrProvider: l1Wallet,
   l2SignerOrProvider: l2Wallet,
 })

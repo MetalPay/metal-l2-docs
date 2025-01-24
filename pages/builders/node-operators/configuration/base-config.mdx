@@ -29,13 +29,13 @@ To configure your node, you will need to do the following:
 Depending on the network you're running, initialization is done one of three ways:
 
 1.  **With Network Flags:** This initializes the genesis information and chain configuration from the [superchain-registry](https://github.com/ethereum-optimism/superchain-registry).
-2.  **With a Genesis File:** This is for deployments that are not migrated from a legacy network (i.e. OP Sepolia). In this case, you'll use a genesis file and initialize the data directory via `geth init`.
-3.  **With a Data Directory:** This is used for networks that are migrated from a legacy network. This currently **only** includes OP Mainnet. In this case, you'll download a preconfigured data directory and extract it. No further initialization is necessary in this case, because the data directory contains the network's genesis information. This method can be bypassed if you utilize [snap sync](/builders/node-operators/management/snap-sync).
+2.  **With a Genesis File:** This is for deployments that are not migrated from a legacy network (i.e. Metal L2 Testnet). In this case, you'll use a genesis file and initialize the data directory via `geth init`.
+3.  **With a Data Directory:** This is used for networks that are migrated from a legacy network. This currently **only** includes Metal L2. In this case, you'll download a preconfigured data directory and extract it. No further initialization is necessary in this case, because the data directory contains the network's genesis information. This method can be bypassed if you utilize [snap sync](/builders/node-operators/management/snap-sync).
 
-Regardless of how `op-geth` is initialized, you'll need to ensure that you have sufficient disk space available to store the network's data. As of this writing, the OP Mainnet data directory is \~1.6TB for a full node and \~5TB for an archival node.
+Regardless of how `op-geth` is initialized, you'll need to ensure that you have sufficient disk space available to store the network's data. As of this writing, the Metal L2 data directory is \~1.6TB for a full node and \~5TB for an archival node.
 
 ### Initialize `op-geth`
-Instructions for each initialization method are below. If you're spinning up an OP Mainnet, use the [Initialization via Data Directory](#initialization-via-data-directory) path. If you're spinning up an OP Sepolia node, use the [Initialization via Network Flags](#initialization-via-network-flags) path.
+Instructions for each initialization method are below. If you're spinning up an Metal L2, use the [Initialization via Data Directory](#initialization-via-data-directory) path. If you're spinning up an Metal L2 Testnet node, use the [Initialization via Network Flags](#initialization-via-network-flags) path.
 
 #### Initialization via network flags
 
@@ -136,7 +136,7 @@ Consult [Geth's documentation](https://geth.ethereum.org/docs/) for more informa
 
 ## Configuring `op-node`
 
-`op-node` is a standalone, statically linked binary. It stores no state, and requires no initialization. It consumes configuration parameters either via the command line or environment variables. For some networks, the Rollup Node also requires a configuration file (called `rollup.json` or the "rollup config") that configures network-specific genesis parameters. For official networks like OP Sepolia and OP Mainnet, the genesis config is hardcoded in the `op-node` software and can be specified via a `--network` flag.
+`op-node` is a standalone, statically linked binary. It stores no state, and requires no initialization. It consumes configuration parameters either via the command line or environment variables. For some networks, the Rollup Node also requires a configuration file (called `rollup.json` or the "rollup config") that configures network-specific genesis parameters. For official networks like Metal L2 Testnet and Metal L2, the genesis config is hardcoded in the `op-node` software and can be specified via a `--network` flag.
 
 Following the [Ecotone upgrade](/builders/node-operators/network-upgrades#ecotone)
 node operators must set an L1 beacon value to retrieve [blobs](/builders/node-operators/management/blobs)
@@ -177,7 +177,7 @@ The default port for the peer-to-peer network is `9003`. You will need to open t
 
 ## Legacy Geth
 
-If you are running a node for an upgraded network like OP Mainnet (but not OP Sepolia), you will also need to run Legacy Geth in order to serve historical execution traces. Fundamentally, Legacy Geth is our old `l2geth` binary running against a preconfigured data directory. To configure Legacy Geth, follow the instructions above for using a preconfigured data directory, then execute the following command:
+If you are running a node for an upgraded network like Metal L2 (but not Metal L2 Testnet), you will also need to run Legacy Geth in order to serve historical execution traces. Fundamentally, Legacy Geth is our old `l2geth` binary running against a preconfigured data directory. To configure Legacy Geth, follow the instructions above for using a preconfigured data directory, then execute the following command:
 
 <Callout type="danger">
   It is imperative that you specify the `USING_OVM=true` environment variable in the command below. Failing to specify this will cause `l2geth` to return invalid execution traces, or panic at startup.
