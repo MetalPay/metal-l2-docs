@@ -12,7 +12,7 @@ OP Stack currently uses a single-Sequencer block production model.
 This means that there is only one Sequencer active on the network at any given time. Single-Sequencer models are simpler than their highly decentralized counterparts but they are also more vulnerable to potential downtime.
 
 Sequencer downtime must not be able to prevent users from transacting on the network. As a result, OP Stack includes a mechanism for "forcing" transactions to be included in the blockchain. This mechanism involves triggering a transaction on OP Stack by sending a transaction on Ethereum.
-In this tutorial you'll learn how to trigger a transaction on OP Stack from Ethereum using Viem. You'll use the OP Sepolia testnet, but the same logic will apply to OP Stack.
+In this tutorial you'll learn how to trigger a transaction on OP Stack from Ethereum using Viem. You'll use the Metal L2 Testnet testnet, but the same logic will apply to OP Stack.
 
 ## Dependencies
 
@@ -49,20 +49,20 @@ You're going to use the `viem` package for this tutorial. Since Viem is a [Node.
   If you have [`cast`](https://book.getfoundry.sh/getting-started/installation) installed you can run `cast wallet new` in your terminal to create a new wallet and get the private key.
 </Callout>
 
-## Get ETH on Sepolia and OP Sepolia
+## Get ETH on Sepolia and Metal L2 Testnet
 
-This tutorial explains how to bridge tokens from Sepolia to OP Sepolia. You will need to get some ETH on both of these testnets.
+This tutorial explains how to bridge tokens from Sepolia to Metal L2 Testnet. You will need to get some ETH on both of these testnets.
 
 <Callout type="info">
   You can use [this faucet](https://sepoliafaucet.com) to get ETH on Sepolia.
-  You can use the [Superchain Faucet](https://console.optimism.io/faucet?utm_source=docs) to get ETH on OP Sepolia.
+  You can use the [Superchain Faucet](https://console.optimism.io/faucet?utm_source=docs) to get ETH on Metal L2 Testnet.
 </Callout>
 
 ## Add a private key to your environment
 
 You need a private key in order to sign transactions.
 Set your private key as an environment variable with the `export` command.
-Make sure this private key corresponds to an address that has ETH on both Sepolia and OP Sepolia.
+Make sure this private key corresponds to an address that has ETH on both Sepolia and Metal L2 Testnet.
 
 ```bash
 export TUTORIAL_PRIVATE_KEY=0x...
@@ -108,14 +108,14 @@ You'll need a few variables throughout this tutorial. Let's set those up now.
 
 ## Check your initial balance
 
-You'll be sending a small amount of ETH as part of this tutorial. Quickly check your balance on OP Sepolia so that you know how much you had at the start of the tutorial.
+You'll be sending a small amount of ETH as part of this tutorial. Quickly check your balance on Metal L2 Testnet so that you know how much you had at the start of the tutorial.
 
 ```js file=<rootDir>/public/tutorials/send-tx-from-eth.js#L17-L18 hash=2bbd74b9de0c0fa0daca043ab9030ff0
 ```
 
 ## Trigger the transaction
 
-Now you'll use the `OptimismPortal` contract to trigger a transaction on OP Sepolia by sending a transaction on Sepolia.
+Now you'll use the `OptimismPortal` contract to trigger a transaction on Metal L2 Testnet by sending a transaction on Sepolia.
 
 <Steps>
   {<h3>Create the OptimismPortal object</h3>}
@@ -154,7 +154,7 @@ Now you'll use the `OptimismPortal` contract to trigger a transaction on OP Sepo
 
 ## Check your updated balance
 
-You should have a little less ETH on OP Sepolia now. Check your balance to confirm.
+You should have a little less ETH on Metal L2 Testnet now. Check your balance to confirm.
 
 ```js file=<rootDir>/public/tutorials/send-tx-from-eth.js#L75-L76 hash=dd456528a8bae103b73c5bcd19216916
 ```
@@ -166,4 +166,4 @@ Make sure that the difference is equal to the amount you were expecting to send.
 
 ## Next steps
 
-You've successfully triggered a transaction on OP Sepolia by sending a transaction on Sepolia using Viem. Although this tutorial demonstrated the simple example of sending a basic ETH transfer from your L2 address via the OptimismPortal contract, you can use this same technique to trigger any transaction you want. You can trigger smart contracts, send ERC-20 tokens, and more.
+You've successfully triggered a transaction on Metal L2 Testnet by sending a transaction on Sepolia using Viem. Although this tutorial demonstrated the simple example of sending a basic ETH transfer from your L2 address via the OptimismPortal contract, you can use this same technique to trigger any transaction you want. You can trigger smart contracts, send ERC-20 tokens, and more.

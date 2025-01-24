@@ -60,11 +60,11 @@ pnpm add ethers@^5
 You'll be using the `getDepositsByAddress` and `getWithdrawalsByAddress` functions from the Optimism SDK during this tutorial.
 These functions use event queries to retrieve the deposits and withdrawals made by a given address.
 Since these functions use large event queries, you'll need to use an RPC provider like [Alchemy](https://alchemy.com) that supports indexed event queries.
-Grab an L1 and L2 RPC URL for Sepolia and OP Sepolia, respectively.
+Grab an L1 and L2 RPC URL for Sepolia and Metal L2 Testnet, respectively.
 
 ```bash
 export L1_RPC_URL=... # Sepolia RPC URL
-export L2_RPC_URL=... # OP Sepolia RPC URL
+export L2_RPC_URL=... # Metal L2 Testnet RPC URL
 ```
 
 <Callout>
@@ -134,7 +134,7 @@ The Optimism SDK exports a `CrossChainMessenger` class that makes it easy to int
 
 Create an instance of the `CrossChainMessenger` class:
 
-```js file=<rootDir>/public/tutorials/sdk-view-txns.js#L19-L24 hash=158c6888c82bdc2f07c37c3edb3a9a6a
+```js file=<rootDir>/public/tutorials/sdk-view-txns.js#L19-L24 hash=8432353280e044ccf56833995f492047
 ```
 
 ## Query for deposits

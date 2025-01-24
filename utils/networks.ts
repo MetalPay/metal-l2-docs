@@ -24,7 +24,7 @@ const chains: {
     explorer: 'https://etherscan.io',
   },
   opmainnet: {
-    name: 'OP Mainnet',
+    name: 'Metal L2',
     id: 10,
     explorer: 'https://optimistic.etherscan.io',
   },
@@ -34,7 +34,7 @@ const chains: {
     explorer: 'https://sepolia.etherscan.io',
   },
   opsepolia: {
-    name: 'OP Sepolia',
+    name: 'Metal L2 Testnet',
     id: 11155420,
     explorer: 'https://sepolia-optimistic.etherscan.io/',
   },

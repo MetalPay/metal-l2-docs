@@ -8,9 +8,17 @@ ADDU
 airgap
 Allnodes
 allocs
+Alphanet
+alphanet
+Alphanets
+alphanets
 ANDI
 Apeworx
 authrpc
+Betanet
+betanet
+Betanets
+betanets
 BGEZ
 BGTZ
 Biconomy
@@ -27,6 +35,8 @@ blockprofilerate
 Blockscout
 Blockspace
 blockspace
+Blocktimes
+blocktimes
 BLOOMFILTER
 bloomfilter
 BLTZ
@@ -38,6 +48,7 @@ bottlenecked
 Brotli
 Callouts
 callouts
+Celestia
 chainlist
 chaosnet
 Chugsplash
@@ -58,6 +69,8 @@ DATADIR
 datadir
 Devnet
 devnet
+Devnets
+devnets
 devx
 DISABLETXPOOLGOSSIP
 disabletxpoolgossip
@@ -65,6 +78,7 @@ Discv
 discv
 DIVU
 Drippie
+Eigen
 ENABLEDEPRECATEDPERSONAL
 enabledeprecatedpersonal
 enginekind
@@ -85,6 +99,7 @@ Farcaster
 FDLIMIT
 fdlimit
 featureset
+Flashblocks
 Flashbots
 forkable
 forkchoice
@@ -150,6 +165,7 @@ merkle
 metall
 MFHI
 MFLO
+Mgas
 MINFREEDISK
 minfreedisk
 MINSUGGESTEDPRIORITYFEE
@@ -163,7 +179,6 @@ MTHI
 MTLO
 MULT
 multiaddr
-multichain
 multiclient
 multisigs
 MULTU
@@ -222,7 +237,7 @@ Preimage
 PREIMAGES
 preimages
 prestate
-PREVRENDAO
+PREVRANDAO
 PRICEBUMP
 pricebump
 PRICELIMIT
@@ -230,6 +245,7 @@ pricelimit
 productionize
 productionized
 Protip
+providng
 Proxied
 pseudorandomly
 Quicknode
@@ -274,16 +290,14 @@ stablecoins
 subcomponents
 subgame
 subheaders
+subsecond
 SUBU
 SUPERCHAIN
 Superchain
 superchain
 Superchain's
-Superchainerc
 Superchains
 Superscan
-Supersim
-supersim
 SYNCMODE
 syncmode
 SYNCTARGET
@@ -312,6 +326,7 @@ vhosts
 Viem
 viem
 Viem's
+viem's
 VMDEBUG
 vmdebug
 VMODULE

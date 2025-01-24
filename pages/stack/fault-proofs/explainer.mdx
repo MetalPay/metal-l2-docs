@@ -10,10 +10,10 @@ import Image from 'next/image'
 # Fault proofs explainer
 
 Fault Proofs are an important part of an Optimistic Rollup system like the OP Stack.
-Users withdraw ETH and tokens from OP Stack chains like OP Mainnet by submitting a withdrawal proof that shows the withdrawal was actually included in the OP Stack chain.
+Users withdraw ETH and tokens from OP Stack chains like Metal L2 by submitting a withdrawal proof that shows the withdrawal was actually included in the OP Stack chain.
 Fault Proofs allow users to permissionlessly submit and challenge the proposals about the state of an OP Stack chain that are used to prove withdrawals.
 
-On June 10, 2024, Fault Proofs were officially added to the OP Stack and were activated on OP Mainnet.
+On June 10, 2024, Fault Proofs were officially added to the OP Stack and were activated on Metal L2.
 This Fault Proofs upgrade moves the OP Stack closer to technical decentralization by:
 *   allowing anyone to make proposals about the state of the L2
 *   allowing anyone to challenge proposals made by other users
@@ -81,9 +81,9 @@ Documentation for `op-challenger` is forthcoming.
 ### How much ETH should a chain operator put aside to operate the Fault Proof System?
 
 The nominal operating cost of running FPs (i.e., assuming no invalid proposals or malicious actors) will depend on the initial bond set for the `FaultDisputeGame` and the frequency of posting proposals.
-Assuming OP Mainnet parameters, where proposals will be posted hourly, that's 0.08 ETH per hour.
+Assuming Metal L2 parameters, where proposals will be posted hourly, that's 0.08 ETH per hour.
 Assuming a 7 day dispute window, you'll need roughly 14 ETH (including gas costs) to make proposals.
-If chains are using the similar FP deploy configs as OP Mainnet, it's recommended to stick to a 0.08 ETH initial bond.
+If chains are using the similar FP deploy configs as Metal L2, it's recommended to stick to a 0.08 ETH initial bond.
 
 However, the capital requirements for operating a FP chain in itself is much larger than 14 ETH.
 An operator that secures their chain using FPs must be willing to stake a lot of ETH to secure the chain.
@@ -93,7 +93,7 @@ The capital requirements will be improved in the later stages of Fault Proofs to
 ### How large are the bonds expected to be needed to sustain and win a dispute?
 
 The bonds are sized based on the anticipated cost to post a counter-claim as well as to deter spamming invalid claims.
-As an example, on OP Sepolia, the game [`0xcf8f181497DAD07277781517A76cb131C54A1BEE`](https://sepolia.etherscan.io/address/0xcf8f181497DAD07277781517A76cb131C54A1BEE) shows the escalating bond sizes.
+As an example, on Metal L2 Testnet, the game [`0xcf8f181497DAD07277781517A76cb131C54A1BEE`](https://sepolia.etherscan.io/address/0xcf8f181497DAD07277781517A76cb131C54A1BEE) shows the escalating bond sizes.
 The list-claims subcommand of op-challenger can also provide a good view of the claims in the game:
 
 ```

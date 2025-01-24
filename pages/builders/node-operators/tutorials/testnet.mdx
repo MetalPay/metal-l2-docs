@@ -1,15 +1,15 @@
 ---
-title: Running an OP Sepolia node from source
+title: Running an Metal L2 Testnet node from source
 lang: en-US
-description: Learn how to run an OP Sepolia node from source code.
+description: Learn how to run an Metal L2 Testnet node from source code.
 ---
 
 import { Callout, Steps } from 'nextra/components'
 
-# Running an OP Sepolia node from source
+# Running an Metal L2 Testnet node from source
 
-This tutorial explains how to run an OP Sepolia node from source code.
-Running an OP Sepolia node from source code is a flexible alternative to using pre-built Docker images.
+This tutorial explains how to run an Metal L2 Testnet node from source code.
+Running an Metal L2 Testnet node from source code is a flexible alternative to using pre-built Docker images.
 
 ## Building the source code
 
@@ -18,7 +18,7 @@ Make sure to follow the instructions on [Building a Node from Source](./node-fro
 
 ## Hardware requirements
 
-Hardware requirements for OP Sepolia nodes can vary depending on the type of node you plan to run.
+Hardware requirements for Metal L2 Testnet nodes can vary depending on the type of node you plan to run.
 Archive nodes generally require significantly more resources than full nodes.
 Below are suggested minimum hardware requirements for each type of node.
 
@@ -101,7 +101,7 @@ Refer to the `op-geth` [configuration documentation](/builders/node-operators/co
 ## Start `op-node`
 
 Once you've started `op-geth`, you can start `op-node`.
-`op-node` will connect to `op-geth` and begin synchronizing the OP Sepolia state.
+`op-node` will connect to `op-geth` and begin synchronizing the Metal L2 Testnet state.
 `op-node` will begin sending block payloads to `op-geth` when it derives enough blocks from Sepolia.
 
 <Steps>
@@ -165,7 +165,7 @@ Note that this flag will cause `op-node` to trust the L1 node to provide correct
 ### Synchronization verification
 
 Once you've started `op-geth` and `op-node` you should see the two begin to 
-communicate with each other and synchronize the OP Mainnet chain.
+communicate with each other and synchronize the Metal L2 chain.
 
 #### Snap sync (default)
 
@@ -221,7 +221,7 @@ There are two stages on `op-geth` for snap sync:
 Initial full synchronization can take several days to complete.
 
 During this time, you will initially observe `op-node` deriving blocks from Ethereum without sending these blocks to `op-geth`.
-This means that `op-node` is requesting blocks from Ethereum one-by-one and determining the corresponding OP Mainnet blocks that were published to Ethereum.
+This means that `op-node` is requesting blocks from Ethereum one-by-one and determining the corresponding Metal L2 blocks that were published to Ethereum.
 You should see logs like the following from `op-node`:
 
 ```text

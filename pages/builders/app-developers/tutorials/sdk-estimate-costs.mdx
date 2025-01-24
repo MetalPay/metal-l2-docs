@@ -8,12 +8,12 @@ import { Callout, Steps, Tabs } from 'nextra/components'
 
 # Estimating transaction costs on OP Stack
 
-In this tutorial, you'll learn how to use [viem](https://viem.sh/op-stack/) to estimate the cost of a transaction on OP Mainnet.
+In this tutorial, you'll learn how to use [viem](https://viem.sh/op-stack/) to estimate the cost of a transaction on Metal L2.
 You'll learn how to estimate the [execution gas fee](/builders/app-developers/transactions/fees#execution-gas-fee) and the [L1 data fee](/builders/app-developers/transactions/fees#l1-data-fee) independently.
 You'll also learn how to estimate the total cost of the transaction all at once.
 
 <Callout>
-  Check out the full explainer on [OP Stack transaction fees](/builders/app-developers/transactions/fees) for more information on how OP Mainnet charges fees under the hood.
+  Check out the full explainer on [OP Stack transaction fees](/builders/app-developers/transactions/fees) for more information on how Metal L2 charges fees under the hood.
 </Callout>
 
 ## Supported networks
@@ -60,20 +60,20 @@ Since Viem is a [Node.js](https://nodejs.org/en/) library, you'll need to create
 
 ## Get ETH on Sepolia
 
-This tutorial explains how to bridge ETH from Sepolia to OP Sepolia.
+This tutorial explains how to bridge ETH from Sepolia to Metal L2 Testnet.
 You will need to get some ETH on Sepolia to follow along.
 
 <Callout type="info">
   You can use [this faucet](https://sepoliafaucet.com) to get ETH on Sepolia.
 </Callout>
 
-## Get ETH on OP Sepolia
+## Get ETH on Metal L2 Testnet
 
-This tutorial explains how estimate transaction costs on OP Sepolia.
-You will need to get some ETH on OP Sepolia in order to run the code in this tutorial.
+This tutorial explains how estimate transaction costs on Metal L2 Testnet.
+You will need to get some ETH on Metal L2 Testnet in order to run the code in this tutorial.
 
 <Callout type="info">
-  You can use the [Superchain faucet](https://console.optimism.io/faucet?utm_source=docs) to get ETH on OP Sepolia.
+  You can use the [Superchain faucet](https://console.optimism.io/faucet?utm_source=docs) to get ETH on Metal L2 Testnet.
 </Callout>
 
 ## Add a private key to your environment
@@ -127,7 +127,7 @@ Let's set those up now.
 
 ## Estimate transaction costs
 
-You're now going to use the Viem to estimate the cost of a transaction on OP Mainnet. 
+You're now going to use the Viem to estimate the cost of a transaction on Metal L2. 
 Here you'll estimate the cost of a simple transaction that sends a small amount of ETH from your address to the address `0x1000000000000000000000000000000000000000`.
 
 <Steps>

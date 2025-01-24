@@ -43,7 +43,7 @@ The `OptimismPortal` contract includes various security mechanisms that allow th
 
 ### Safeguards within `FaultDisputeGame`
 
-The `FaultDisputeGame` contracts store bonds within a `DelayedWETH` contract that is managed by the `SystemOwner`. Withdrawals from the `DelayedWETH` contract are delayed which gives the `SystemOwner` the ability to manually recover from situations in which bonds would be incorrectly distributed. This delay is set to 7 days on OP Mainnet to give the `SystemOwner` or `Guardian` sufficient time to respond to potential security concerns.
+The `FaultDisputeGame` contracts store bonds within a `DelayedWETH` contract that is managed by the `SystemOwner`. Withdrawals from the `DelayedWETH` contract are delayed which gives the `SystemOwner` the ability to manually recover from situations in which bonds would be incorrectly distributed. This delay is set to 7 days on Metal L2 to give the `SystemOwner` or `Guardian` sufficient time to respond to potential security concerns.
 
 ### Safeguards within `DelayedWETH`
 
@@ -55,7 +55,7 @@ The `FaultDisputeGame` contracts store bonds within a `DelayedWETH` contract tha
 ### Cumulative security impact
 
 As with the original system, the cumulative effect of these security capabilities is that the `Guardian` role provides fast response capabilities while the `SystemOwner` can always step in to resolve all classes of bugs that could result in a loss of funds.
-The most significant change in security model with the introduction of Fault Proof Mainnet is that `SystemOwner` can take a more passive role as invalid proposals will generally be rejected by the Fault Proof System while the `Guardian` can act as a backstop only in case of a failure in the fault proof game.
+With the introduction of Fault Proof Mainnet, The most significant change in the security model is that `SystemOwner` can take a more passive role. Invalid proposals will generally be rejected by the Fault Proof System, while the `Guardian` can act as a backstop only in case of a failure in the fault proof game.
 
 ## Next steps
 

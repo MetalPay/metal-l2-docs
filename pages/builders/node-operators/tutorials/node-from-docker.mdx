@@ -8,14 +8,14 @@ import { Callout, Steps } from 'nextra/components'
 
 # Running a node with Docker
 
-Using [Docker](https://docs.docker.com/engine/install/) is an easy way to run an OP Mainnet node.
-This tutorial will walk you through the process of using [`simple-optimism-node`](https://github.com/smartcontracts/simple-optimism-node) to run an OP Mainnet or OP Sepolia node using Docker.
+Using [Docker](https://docs.docker.com/engine/install/) is an easy way to run an Metal L2 node.
+This tutorial will walk you through the process of using [`simple-optimism-node`](https://github.com/smartcontracts/simple-optimism-node) to run an Metal L2 or Metal L2 Testnet node using Docker.
 `simple-optimism-node` also provides useful tools like a monitoring dashboard and health checking software.
-Although less flexible than [running a node from source](./node-from-source) or building your own Docker setup, this is a great way to quickly get started with OP Mainnet.
+Although less flexible than [running a node from source](./node-from-source) or building your own Docker setup, this is a great way to quickly get started with Metal L2.
 
 ## What's included
 
-`simple-optimism-node` includes all the basic components to run an OP Mainnet or OP Sepolia node.
+`simple-optimism-node` includes all the basic components to run an Metal L2 or Metal L2 Testnet node.
 It also includes several additional services to monitor the health of your node and the health of the network you're connected to.
 See the [What's Included](https://github.com/smartcontracts/simple-optimism-node#whats-included) section of the `simple-optimism-node` README for more details.
 
@@ -52,8 +52,8 @@ Configuration for `simple-optimism-node` is handled through environment variable
 
   **NETWORK_NAME** - Choose which Optimism network layer you want to operate on:
 
-  *   `op-mainnet` - OP Mainnet
-  *   `op-sepolia` - OP Sepolia (Testnet)
+  *   `op-mainnet` - Metal L2
+  *   `op-sepolia` - Metal L2 Testnet (Testnet)
   *   `base-mainnet` - Base Mainnet
   *   `base-sepolia` - Base Sepolia (Testnet)
 
@@ -75,8 +75,8 @@ Configuration for `simple-optimism-node` is handled through environment variable
 
   **HEALTHCHECK__REFERENCE_RPC_PROVIDER** - Specify the public RPC endpoint for Layer 2 network you want to operate on for healthcheck. For instance:
 
-  *   **OP Mainnet** - [https://mainnet.optimism.io](https://mainnet.optimism.io)
-  *   **OP Sepolia** - [https://sepolia.optimism.io](https://sepolia.optimism.io)
+  *   **Metal L2** - [https://mainnet.optimism.io](https://mainnet.optimism.io)
+  *   **Metal L2 Testnet** - [https://sepolia.optimism.io](https://sepolia.optimism.io)
   *   **Base Mainnet** - [https://mainnet.base.org](https://mainnet.base.org)
   *   **Base Sepolia** - [https://sepolia.base.org](https://sepolia.base.org)
 </Steps>

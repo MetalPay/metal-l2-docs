@@ -6,14 +6,14 @@ description: Learn about node architecture.
 
 # Node architecture
 
-This page reviews node architecture for all nodes running on the Superchain network. All OP Mainnet nodes are composed of two core software services, the Rollup Node and the Execution Client.
-OP Mainnet also optionally supports a third component, Legacy Geth, that can serve stateful queries for blocks and transactions created before the [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/).
+This page reviews node architecture for all nodes running on the Superchain network. All Metal L2 nodes are composed of two core software services, the Rollup Node and the Execution Client.
+Metal L2 also optionally supports a third component, Legacy Geth, that can serve stateful queries for blocks and transactions created before the [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/).
 
 ## Node flow diagram
 The following diagram shows how the Rollup Node, Execution Client, and Legacy Geth components work together to form a complete node running on the Superchain network.
 This diagram uses the `op-node` and `op-geth` implementations of the Rollup Node and Execution Client respectively, but the same architecture generally applies to other implementations as well.
 
-![OP Mainnet node architecture diagram.](/img/guides/node-operators/node-arch.svg)
+![Metal L2 node architecture diagram.](/img/guides/node-operators/node-arch.svg)
 
 ## Rollup node
 
@@ -27,13 +27,13 @@ The Execution Client is largely analogous to an [execution client](https://ether
 
 ## Legacy Geth
 
-OP Mainnet underwent a large database migration as part of the [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/) in 2023.
-Blocks and transactions included in OP Mainnet prior to the Bedrock Upgrade are served by current execution engines but cannot be executed without the help of a special component called Legacy Geth.
+Metal L2 underwent a large database migration as part of the [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/) in 2023.
+Blocks and transactions included in Metal L2 prior to the Bedrock Upgrade are served by current execution engines but cannot be executed without the help of a special component called Legacy Geth.
 This means that you will need to run Legacy Geth if you want to be able to run RPC calls such as `eth_call` on blocks before the Bedrock Upgrade.
 
-Legacy Geth is the software that was used to run OP Mainnet nodes prior to the Bedrock Upgrade.
-If you run an instance of Legacy Geth alongside your OP Mainnet node, your node will be able to forward requests against historical transactions to the Legacy Geth instance.
-Legacy Geth is **not** required and is typically only necessary if you want to maintain a complete archive node for OP Mainnet.
+Legacy Geth is the software that was used to run Metal L2 nodes prior to the Bedrock Upgrade.
+If you run an instance of Legacy Geth alongside your Metal L2 node, your node will be able to forward requests against historical transactions to the Legacy Geth instance.
+Legacy Geth is **not** required and is typically only necessary if you want to maintain a complete archive node for Metal L2.
 
 ## Next steps
 

@@ -1,15 +1,15 @@
 ---
-title: Running an OP Mainnet node from source
+title: Running an Metal L2 node from source
 lang: en-US
-description: Learn how to run an OP Mainnet node from source code for full nodes and archive nodes.
+description: Learn how to run an Metal L2 node from source code for full nodes and archive nodes.
 ---
 
 import { Callout, Steps } from 'nextra/components'
 
-# Running an OP Mainnet node from source
+# Running an Metal L2 node from source
 
-This tutorial explains how to run an OP Mainnet node from source code for full nodes and archive nodes.
-Running an OP Mainnet node from source code is a flexible alternative to using pre-built Docker images.
+This tutorial explains how to run an Metal L2 node from source code for full nodes and archive nodes.
+Running an Metal L2 node from source code is a flexible alternative to using pre-built Docker images.
 
 ## Building the source code
 
@@ -18,7 +18,7 @@ Make sure to follow the instructions on [Building a Node from Source](./node-fro
 
 ## Hardware requirements
 
-Hardware requirements for OP Mainnet nodes can vary depending on the type of node you plan to run.
+Hardware requirements for Metal L2 nodes can vary depending on the type of node you plan to run.
 Archive nodes generally require significantly more resources than full nodes.
 Below are suggested minimum hardware requirements for each type of node.
 
@@ -36,7 +36,7 @@ Below are the storage needs as of April 2024:
 Based on these trends, node operators should plan for future storage needs and choose SSDs that can handle these increasing requirements.
 
 <Callout type="info">
-  Geth supports a "freezer" feature to store older chain data on HDDs, saving SSD space. Configure this for OP Mainnet using the `--datadir.ancient` flag. See [Geth docs](https://geth.ethereum.org/docs/fundamentals/databases) and [OP docs](../configuration/execution-config#datadirancient) for details.
+  Geth supports a "freezer" feature to store older chain data on HDDs, saving SSD space. Configure this for Metal L2 using the `--datadir.ancient` flag. See [Geth docs](https://geth.ethereum.org/docs/fundamentals/databases) and [OP docs](../configuration/execution-config#datadirancient) for details.
 </Callout>
 
 ## Full nodes
@@ -108,7 +108,7 @@ You can still start `op-geth` without yet running `op-node`, but the `op-geth` i
 ### Start `op-node`
 
 Once you've started `op-geth`, you can start `op-node`.
-`op-node` will connect to `op-geth` and begin synchronizing the OP Mainnet state.
+`op-node` will connect to `op-geth` and begin synchronizing the Metal L2 state.
 `op-node` will begin sending block payloads to `op-geth` when it derives enough blocks from Ethereum.
 
 <Steps>
@@ -172,7 +172,7 @@ Once you've started `op-geth`, you can start `op-node`.
 ### Synchronization verification
 
 Once you've started `op-geth` and `op-node` you should see the two begin to 
-communicate with each other and synchronize the OP Mainnet chain.
+communicate with each other and synchronize the Metal L2 chain.
 
 #### Snap sync (default)
 
@@ -226,12 +226,12 @@ There are two stages on `op-geth` for snap sync:
 #### Full sync
 
 <Callout type="info">
-You will need access to the migrated OP Mainnet database to run a full node with full sync.
+You will need access to the migrated Metal L2 database to run a full node with full sync.
 You can [migrate your own data directory](https://web.archive.org/web/20240110231645/https://blog.oplabs.co/reproduce-bedrock-migration/) or follow the options available for [archive nodes](#get-the-migrated-data-directory).
 </Callout>
 
 Initial full synchronization can take several days or weeks to complete. During this time, you will initially observe `op-node` deriving blocks from Ethereum without sending these blocks to `op-geth`.
-This means that `op-node` is requesting blocks from Ethereum one-by-one and determining the corresponding OP Mainnet blocks that were published to Ethereum.
+This means that `op-node` is requesting blocks from Ethereum one-by-one and determining the corresponding Metal L2 blocks that were published to Ethereum.
 You should see logs like the following from `op-node`:
 
 ```text
@@ -264,18 +264,18 @@ INFO [06-26|14:02:12.982] Starting work on payload                 id=0x5542117d
 
 ### Get the migrated data directory
 
-OP Mainnet underwent a large database migration as part of the [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/) in 2023.
-You will need access to the migrated OP Mainnet database to run an archive node.
+Metal L2 underwent a large database migration as part of the [Bedrock Upgrade](https://web.archive.org/web/20230608050602/https://blog.oplabs.co/introducing-optimism-bedrock/) in 2023.
+You will need access to the migrated Metal L2 database to run an archive node.
 You can [migrate your own data directory](https://web.archive.org/web/20240110231645/https://blog.oplabs.co/reproduce-bedrock-migration/) or simply download database that has already been migrated.
 In this section, you'll learn how to download and verify the pre-migrated database.
 
 <Steps>
   {<h3>Download the Migrated Data Directory</h3>}
 
-  Click the link below to find the latest publicly available database snapshots for OP Mainnet.
+  Click the link below to find the latest publicly available database snapshots for Metal L2.
   Snapshots are available for multiple dates and snapshots get larger as they get closer to the current date.
   Snapshots are large files and may take some time to download.
-  [OP Mainnet Snapshots](/builders/node-operators/management/snapshots#op-mainnet)
+  [Metal L2 Snapshots](/builders/node-operators/management/snapshots#op-mainnet)
 
   {<h3>Verify the Download</h3>}
 
@@ -300,7 +300,7 @@ In this section, you'll learn how to download and verify the pre-migrated databa
   ```
 
   Your exact output will depend on the snapshot you've downloaded.
-  Check the [OP Mainnet Snapshots](/builders/node-operators/management/snapshots#op-mainnet) page for the correct checksum for the snapshot you've downloaded.
+  Check the [Metal L2 Snapshots](/builders/node-operators/management/snapshots#op-mainnet) page for the correct checksum for the snapshot you've downloaded.
 
   {<h3>Extract the Data Directory</h3>}
 
@@ -324,11 +324,11 @@ In this section, you'll learn how to download and verify the pre-migrated databa
 
 ### Get the legacy Geth directory (optional)
 
-Blocks and transactions included in OP Mainnet before the Bedrock Upgrade cannot be executed by modern OP Mainnet nodes.
-OP Mainnet nodes will **serve** these blocks and transactions but cannot run certain queries against them (e.g. `eth_call`).
-If you need to run stateful queries like `eth_call` against these older blocks and transactions, you will need to run a Legacy Geth node alongside your OP Mainnet node.
+Blocks and transactions included in Metal L2 before the Bedrock Upgrade cannot be executed by modern Metal L2 nodes.
+Metal L2 nodes will **serve** these blocks and transactions but cannot run certain queries against them (e.g. `eth_call`).
+If you need to run stateful queries like `eth_call` against these older blocks and transactions, you will need to run a Legacy Geth node alongside your Metal L2 node.
 
-Running a Legacy Geth node is entirely optional and typically only useful for operators who want to run complete archive nodes of the OP Mainnet state.
+Running a Legacy Geth node is entirely optional and typically only useful for operators who want to run complete archive nodes of the Metal L2 state.
 If you want to run a full node then you can safely skip this section.
 
 <Steps>
@@ -369,7 +369,7 @@ If you want to run a full node then you can safely skip this section.
 
 ### Start legacy Geth (optional)
 
-If you've chosen to run a Legacy Geth node alongside your OP Mainnet node, you'll need to start it before you start your OP Mainnet node.
+If you've chosen to run a Legacy Geth node alongside your Metal L2 node, you'll need to start it before you start your Metal L2 node.
 
 <Steps>
   {<h3>Navigate to your Legacy Geth directory</h3>}
