@@ -2,6 +2,7 @@ ACCOUNTQUEUE
 accountqueue
 ACCOUNTSLOTS
 accountslots
+ACDC
 ADDI
 ADDIU
 ADDU
@@ -79,6 +80,7 @@ discv
 DIVU
 Drippie
 Eigen
+EIPs
 ENABLEDEPRECATEDPERSONAL
 enabledeprecatedpersonal
 enginekind
@@ -215,6 +217,9 @@ opnode's
 Pausability
 pausable
 pcscdpath
+Pectra
+pectra
+Pectra's
 Peerstore
 peerstore
 peerstores
@@ -245,7 +250,6 @@ pricelimit
 productionize
 productionized
 Protip
-providng
 Proxied
 pseudorandomly
 Quicknode
@@ -296,6 +300,8 @@ SUPERCHAIN
 Superchain
 superchain
 Superchain's
+Superchainerc
+superchainerc
 Superchains
 Superscan
 SYNCMODE
@@ -307,6 +313,7 @@ thirdweb
 threadcreate
 tility
 timeseries
+triggerable
 trustlessly
 trustrpc
 txfeecap
