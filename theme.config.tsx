@@ -5,7 +5,6 @@ import { useConfig } from "nextra-theme-docs";
 import { FeelbackYesNo, PRESET_LIKE_DISLIKE } from "@feelback/react";
 import "@feelback/react/styles/feelback.css";
 import { Search } from "./components/Search";
-//import { Search } from "./components/Search";
 
 const config: DocsThemeConfig = {
   logo: (

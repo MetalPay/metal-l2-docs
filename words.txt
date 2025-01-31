@@ -2,6 +2,7 @@ ACCOUNTQUEUE
 accountqueue
 ACCOUNTSLOTS
 accountslots
+ACDC
 ADDI
 ADDIU
 ADDU
@@ -79,6 +80,7 @@ discv
 DIVU
 Drippie
 Eigen
+EIPs
 ENABLEDEPRECATEDPERSONAL
 enabledeprecatedpersonal
 enginekind
@@ -98,7 +100,6 @@ extradata
 Farcaster
 FDLIMIT
 fdlimit
-featureset
 Flashblocks
 Flashbots
 forkable
@@ -127,6 +128,7 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
+Holesky
 holesky
 IGNOREPRICE
 ignoreprice
@@ -215,6 +217,8 @@ opnode's
 Pausability
 pausable
 pcscdpath
+Pectra
+Pectra's
 Peerstore
 peerstore
 peerstores
@@ -245,7 +249,6 @@ pricelimit
 productionize
 productionized
 Protip
-providng
 Proxied
 pseudorandomly
 Quicknode
@@ -268,6 +271,7 @@ rpckind
 RPCPREFIX
 rpcprefix
 RPGF
+runbooks
 RWAs
 safedb
 Schnorr
@@ -307,6 +311,7 @@ thirdweb
 threadcreate
 tility
 timeseries
+triggerable
 trustlessly
 trustrpc
 txfeecap
