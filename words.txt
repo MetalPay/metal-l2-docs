@@ -100,7 +100,6 @@ extradata
 Farcaster
 FDLIMIT
 fdlimit
-featureset
 Flashblocks
 Flashbots
 forkable
@@ -129,6 +128,7 @@ historicalrpc
 HISTORICALRPCTIMEOUT
 historicalrpctimeout
 HOLESKY
+Holesky
 holesky
 IGNOREPRICE
 ignoreprice
@@ -218,7 +218,6 @@ Pausability
 pausable
 pcscdpath
 Pectra
-pectra
 Pectra's
 Peerstore
 peerstore
@@ -272,6 +271,7 @@ rpckind
 RPCPREFIX
 rpcprefix
 RPGF
+runbooks
 RWAs
 safedb
 Schnorr
@@ -300,8 +300,6 @@ SUPERCHAIN
 Superchain
 superchain
 Superchain's
-Superchainerc
-superchainerc
 Superchains
 Superscan
 SYNCMODE
