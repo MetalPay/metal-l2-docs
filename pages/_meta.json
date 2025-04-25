@@ -37,10 +37,16 @@
     }
   },
 
+  "mpc": {
+    "title": "Metal Pay Connect Onramp",
+    "type": "page",
+    "href": "https://www.metalpay.com/metal-pay-connect?utm_source=mtl_docs",
+    "newWindow": true
+  },
   "faucet": {
     "title": "Superchain faucet",
     "type": "page",
-    "href": "https://console.optimism.io/faucet?utm_source=docs",
+    "href": "https://console.optimism.io/faucet?utm_source=mtl_docs",
     "newWindow": true
   },
   "bridge": {

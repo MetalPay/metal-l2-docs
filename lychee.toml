@@ -41,6 +41,8 @@ exclude = [
     'https://sepolia.base.org',
     'https://optimism.easscan.org',
     'https://defillama.com/chain/Optimism/',
+    'https://docs.optimism.io/*',
+    'https://github.com/ethereum-optimism/*',
     '\.(pdf|zip|png|jpg|jpeg|gif|svg|json)$'
 ]
 
