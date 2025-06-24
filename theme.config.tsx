@@ -79,14 +79,6 @@ const config: DocsThemeConfig = {
   editLink: {
     text: '✏️ Edit this page on GitHub'
   },
-  /*banner: {
-    key: 'fp-mainnet-release',
-    text: (
-      <a href="/builders/notices/sdk-deprecation">
-        🎉 We are deprecating the Optimism SDK and migrating all tutorials to use viem/op-stack. Read more →
-      </a>
-    )
-  },*/
   useNextSeoProps() {
     const { asPath } = useRouter();
     if (asPath !== "/") {
@@ -112,7 +104,7 @@ const config: DocsThemeConfig = {
         />
         <meta
           property="og:image"
-          content="https://docs.optimism.io/logos/docs-header.png"
+          content="/logos/metal-logo-docs-dark.svg"
         />
         <meta
           name="twitter:card"
@@ -120,15 +112,15 @@ const config: DocsThemeConfig = {
         />
         <meta
           name="twitter:title"
-          content={frontMatter.title || "Optimism Docs"}
+          content={frontMatter.title || "Metal L2 Docs"}
         />
         <meta
           name="twitter:description"
-          content={frontMatter.description || "Optimism Docs for developers"}
+          content={frontMatter.description || "Metal L2 Docs for developers"}
         />
         <meta
           name="twitter:image"
-          content="https://docs.optimism.io/logos/docs-header.png"
+          content="/logos/metal-logo-docs-dark.svg"
         />
         <link
           rel="icon"
